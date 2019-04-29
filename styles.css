@@ -100,3 +100,22 @@ body {
         fill: blue;
         font-size:36px
 }
+
+.findFloofContentWrapper{
+	margin-left:5%;
+        padding-top:2%;
+        padding-bottom:2%;
+        overflow: auto;
+}
+
+.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+}
+
+.border{
+	border: 5px solid #66FF89;
+        box-shadow: 5px 10px 10px #676d53;
+}
