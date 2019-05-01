@@ -27,14 +27,14 @@
 			<br>
 			<font size="2">**Please respect service dogs. Petting a service animal might be dangerous for the human they work with**</font>
 			<br>
-			<input type="radio" name="serviceDog" value="0">Yes
-			<input type="radio" name="serviceDog" value="1">No<br>
+			<input type="radio" name="serviceDog" value=0>Yes
+			<input type="radio" name="serviceDog" value=1>No<br>
 			<br>
 			<font size="5">Was the owner okay with pets?</font>
 			<br>
-			<input type="radio" name="permissionToPet" value="0">Yes
-			<input type="radio" name="permissionToPet" value="1">No
-			<input type="radio" name="permissionToPet" value="2">Unsure<br>
+			<input type="radio" name="permissionToPet" value=0>Yes
+			<input type="radio" name="permissionToPet" value=1>No
+			<input type="radio" name="permissionToPet" value=2>Unsure<br>
 			<br>
 			<font size="5">Was it a good dog?</font>
 			<br>
@@ -60,16 +60,20 @@
 				die("CONNECTION FAILED");
 			}
 
-			$insertSQL = "INSERT INTO dog (location) VALUES('doug the dog')";
-
-			#$location = $_POST['location'];
-			#$dogOnDuty = $_POST['serviceDog'];
-			#$permissionToPet = $_POST['permissionToPet'];
+			$location = $_POST['location'];
+			$dogOnDuty = $_POST['serviceDog'];
+			$permissionToPet = $_POST['permissionToPet'];
 			#$dateTime = date_create()->format('Y-m-d H:i:s');
+			$dateTime = date('Y-m-d H:i:s');
+			$insertSQL = "INSERT INTO campus_dogs (location, dateTime, dogOnDuty, permissionToPet) VALUES('$location','$dateTime','$dogOnDuty','$permissionToPet')";
 
-			#$insertSQL = "INSERT INTO campus_dogs (location, dogOnDuty, permissionToPet) VALUES('$location','$dogOnDuty','$permissionToPet)";
-
-			$connection->close();
+		if($connection->query($insertSQL)===TRUE){
+				echo "Thank you for logging a doggo at " . $location ;
+			} else {
+				echo "FAILED";
+			}
+		$connection->close();
+		
 		}
 
 ?>
