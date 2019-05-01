@@ -119,3 +119,100 @@ body {
 	border: 5px solid #66FF89;
         box-shadow: 5px 10px 10px #676d53;
 }
+
+.location_icon{
+	color:red;
+}
+
+.container {
+	position: relative;
+}
+
+.centered{
+ 	position: absolute;
+ 	left: 50%;
+ 	top: 50%;
+}
+
+.svg-24px {
+  	width: 24px;
+  	height: 24px;
+}
+
+/*style classes used for location of each building*/
+.robinson{
+	position: absolute;
+	left:28%;
+	top: 39%;
+}
+.library{
+	position: absolute;
+	left: 38%;
+	top: 43%;
+}
+.studentCenter{
+        position: absolute;
+        left: 42%;
+        top: 42%;
+}
+.wellnessCenter{
+        position: absolute;
+        left: 47%;
+        top: 37%;
+}
+.savitz{
+        position: absolute;
+        left: 35%;
+        top: 46%;
+}
+.science{
+        position: absolute;
+        left: 30%;
+        top: 50%;
+}
+.westby{
+        position: absolute;
+        left: 27%;
+        top: 53%;
+}
+.bozorth{
+        position: absolute;
+        left: 34%;
+        top: 67%;
+}
+.hawthorne{
+        position: absolute;
+        left: 33%;
+        top: 60%;
+}
+.business{
+        position: absolute;
+        left: 24%;
+        top: 55%;
+}
+.engineering{
+        position: absolute;
+        left: 14%;
+        top: 35%;
+}
+.bunce{
+        position: absolute;
+        left: 41%;
+        top: 69%;
+}
+.james{
+        position: absolute;
+        left: 26%;
+        top: 28%;
+}
+.wilson{
+        position: absolute;
+        left: 22%;
+        top: 40%;
+}
+.recCenter{
+        position: absolute;
+        left: 33%;
+        top: 30%;
+}
+

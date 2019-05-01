@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-US">
         <head>
-                <link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         </head>
         <body>
                 <div class="parallax"></div>
@@ -18,7 +19,7 @@
                                 <button class="button" onclick="location.href = './home1.php?page=findAFloof';" id="findFloof">Find a Floof!</button>
                         </div>
                 </div>
-                <div class="upperWrapper">
+		<div class="upperWrapper">
 			<?php
 				switch($_GET['page']){
 					case 'logADog':

@@ -6,17 +6,21 @@
 			<font size="5">Where'd you see the doggo?</font>
 			<br> 	
 			<select name="location" id="location">
-				<option value="Robinson">Robinson</option>
-				<option value="Library">Library</option>
-				<option value="Student Center">Student Center</option>
-				<option value="Wellness Center">Wellness Center</option>
-				<option value="Savitz">Savitz</option>
-				<option value="Science Building">Science Building</option>
-				<option value="Westby">Westby</option>
 				<option value="Bozorth">Bozroth</option>
-				<option value="Hawthorne">Hawthorne</option>
+				<option value="Bunce">Bunce</option>
 				<option value="Business">Business</option>
 				<option value="Engineering">Engineering</option>
+				<option value="Hawthorne">Hawthorne</option>
+				<option value="James">James</option>
+				<option value="Library">Library</option>
+				<option value="Rec Center">Rec Center</option>
+				<option value="Robinson">Robinson</option>
+				<option value="Savitz">Savitz</option>
+				<option value="Science Building">Science Building</option>
+				<option value="Student Center">Student Center</option>
+				<option value="Wellness Center">Wellness Center</option>
+				<option value="Westby">Westby</option>
+				<option value="Wilson">Wilson</option>
 			</select><br>
 			<br>
 			<font size="5">Was the doggo on duty?</font>
@@ -32,9 +36,12 @@
 			<input type="radio" name="permissionToPet" value="1">No
 			<input type="radio" name="permissionToPet" value="2">Unsure<br>
 			<br>
-			<input type="submit" id="submitButton" value="Submit">
-			<br> 
-
+			<font size="5">Was it a good dog?</font>
+			<br>
+			<input type="checkbox" name="rating" value ="rated" >10/10 would pet again
+			<br>
+			<br>
+			<input type="submit" id="submitButton" value="Submit" onclick="pr()" disabled>
 		</form>	
 	</div>
 	<br><br><br><br><br><br><br><br>			
