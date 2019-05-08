@@ -80,6 +80,17 @@ body {
         overflow: auto;
 }
 
+.foundTheFloofDataWrapper{
+        padding-bottom: 1%;
+        padding-left: 1%;
+        padding-right: 1%;
+        width: 30%;
+        line-height:1.2;
+        border: 5px solid #66FF89;
+        box-shadow: 5px 10px 10px #676d53;
+        background-color:#fff9ff;
+        overflow: auto;
+}
 
 .parallax {
         /* The image used */

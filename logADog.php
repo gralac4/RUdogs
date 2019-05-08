@@ -41,7 +41,7 @@
 			<input type="checkbox" name="rating" value ="rated" >10/10 would pet again
 			<br>
 			<br>
-			<input type="submit" id="submitButton" value="Submit" onclick="pr()" disabled>
+			<input type="submit" id="submitButton" value="Submit" onclick="pr()">
 		</form>	
 	</div>
 	<br><br><br><br><br><br><br><br>			
