@@ -80,6 +80,17 @@ body {
         overflow: auto;
 }
 
+.foundTheFloofDataWrapper{
+        padding-bottom: 1%;
+        padding-left: 1%;
+        padding-right: 1%;
+        width: 30%;
+        line-height:1.2;
+        border: 5px solid #66FF89;
+        box-shadow: 5px 10px 10px #676d53;
+        background-color:#fff9ff;
+        overflow: auto;
+}
 
 .parallax {
         /* The image used */
@@ -142,53 +153,53 @@ body {
 /*style classes used for location of each building*/
 .robinson{
 	position: absolute;
-	left:28%;
+	left:27%;
 	top: 39%;
 }
 .library{
 	position: absolute;
-	left: 38%;
+	left: 36%;
 	top: 43%;
 }
 .studentCenter{
         position: absolute;
         left: 42%;
-        top: 42%;
+        top: 40%;
 }
 .wellnessCenter{
         position: absolute;
-        left: 47%;
+        left: 46%;
         top: 37%;
 }
 .savitz{
         position: absolute;
-        left: 35%;
+        left: 33%;
         top: 46%;
 }
 .science{
         position: absolute;
-        left: 30%;
-        top: 50%;
+        left: 29%;
+        top: 48%;
 }
 .westby{
         position: absolute;
-        left: 27%;
+        left: 26%;
         top: 53%;
 }
 .bozorth{
         position: absolute;
-        left: 34%;
+        left: 33%;
         top: 67%;
 }
 .hawthorne{
         position: absolute;
-        left: 33%;
-        top: 60%;
+        left: 32%;
+        top: 59%;
 }
 .business{
         position: absolute;
-        left: 24%;
-        top: 55%;
+        left: 23%;
+        top: 56%;
 }
 .engineering{
         position: absolute;
@@ -197,13 +208,13 @@ body {
 }
 .bunce{
         position: absolute;
-        left: 41%;
+        left: 40%;
         top: 69%;
 }
 .james{
         position: absolute;
-        left: 26%;
-        top: 28%;
+        left: 25%;
+        top: 27%;
 }
 .wilson{
         position: absolute;
@@ -213,6 +224,6 @@ body {
 .recCenter{
         position: absolute;
         left: 33%;
-        top: 30%;
+        top: 28%;
 }
 

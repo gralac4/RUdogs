@@ -42,6 +42,7 @@
 			<br>
 			<br>
 			<input type="submit" id="submitButton" value="Submit" onclick="pr()" >
+			<input type="submit" id="submitButton" value="Submit" onclick="pr()">
 		</form>	
 	</div>
 	<br><br><br><br><br><br><br><br>			
@@ -76,7 +77,5 @@
 		$connection->close();
 		
 		}
-
+		
 ?>
-
-
