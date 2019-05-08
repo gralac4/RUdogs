@@ -1,10 +1,13 @@
 <div class="upperContentWrapper">
-	<div class="foundTheFloofDataWrapper">
-		<h1>Floof Information:</h1>
-		<font size="5" id="dogLocation">Found outside:<br></font>
-		<font size="5" id="dogOnDuty">It was not a service dog<br> </font>
-		<font size="5" id="dogRating">10/10 would pet again! </font>
-	</div>
+	<p>
+		<img src="dogSquad.gif" align="right" hspace="10%" height=45% width=45% alt="Animated gif of dog squad running together">
+		<div class="foundTheFloofDataWrapper">
+			<h1>Floof Information:</h1>
+			<font size="5" id="dogLocation">Found outside:<br></font>
+			<font size="5" id="dogOnDuty">It was not a service dog<br> </font>
+			<font size="5" id="dogRating">10/10 would pet again! </font>
+		</div>
+	</p>
 </div>
 <div class="findFloofContentWrapper">
 	<div class="container">
@@ -23,7 +26,7 @@
 		<img src="baseline-location_on-24px.svg" id="wellnessCenter" class="wellnessCenter" alt="location pin on the Wellness Center">
 		<img src="baseline-location_on-24px.svg" id="westby" class="westby" alt="location pin on Westby">
 		<img src="baseline-location_on-24px.svg" id="wilson" class="wilson" alt="location pin on Wilson">
-		<img src="mapOfRowan.png" class="border" alt="Map of Rowan university">
+		<img src="mapOfRowan.png" class="border" height=90% width=90% alt="Map of Rowan university">
 		<br>
 	</div>
 	<br>

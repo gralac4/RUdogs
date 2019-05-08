@@ -153,53 +153,53 @@ body {
 /*style classes used for location of each building*/
 .robinson{
 	position: absolute;
-	left:28%;
+	left:27%;
 	top: 39%;
 }
 .library{
 	position: absolute;
-	left: 38%;
+	left: 36%;
 	top: 43%;
 }
 .studentCenter{
         position: absolute;
         left: 42%;
-        top: 42%;
+        top: 40%;
 }
 .wellnessCenter{
         position: absolute;
-        left: 47%;
+        left: 46%;
         top: 37%;
 }
 .savitz{
         position: absolute;
-        left: 35%;
+        left: 33%;
         top: 46%;
 }
 .science{
         position: absolute;
-        left: 30%;
-        top: 50%;
+        left: 29%;
+        top: 48%;
 }
 .westby{
         position: absolute;
-        left: 27%;
+        left: 26%;
         top: 53%;
 }
 .bozorth{
         position: absolute;
-        left: 34%;
+        left: 33%;
         top: 67%;
 }
 .hawthorne{
         position: absolute;
-        left: 33%;
-        top: 60%;
+        left: 32%;
+        top: 59%;
 }
 .business{
         position: absolute;
-        left: 24%;
-        top: 55%;
+        left: 23%;
+        top: 56%;
 }
 .engineering{
         position: absolute;
@@ -208,13 +208,13 @@ body {
 }
 .bunce{
         position: absolute;
-        left: 41%;
+        left: 40%;
         top: 69%;
 }
 .james{
         position: absolute;
-        left: 26%;
-        top: 28%;
+        left: 25%;
+        top: 27%;
 }
 .wilson{
         position: absolute;
@@ -224,6 +224,6 @@ body {
 .recCenter{
         position: absolute;
         left: 33%;
-        top: 30%;
+        top: 28%;
 }
 
