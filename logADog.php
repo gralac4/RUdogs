@@ -41,7 +41,6 @@
 			<input type="checkbox" name="rating" value =0 >10/10 an AMAZING DOGGO
 			<br>
 			<br>
-			<input type="submit" id="submitButton" value="Submit" onclick="pr()" >
 			<input type="submit" id="submitButton" value="Submit" onclick="pr()">
 		</form>	
 	</div>
