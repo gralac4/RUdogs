@@ -107,5 +107,55 @@ function changeText(id){
 
 }
 
-</script>
+        function dogLocation(location){
+                var obj = <?php echo json_encode($rowData) ?>;
+                for(i in obj){
+                        if(obj[i].location == location)
+                        {
+                                console.log("found one!");
+                                docuument.getElementById("dogLocation").innerHTML =
+                        }
+                }
+        }
 
+
+</script>
+<?php
+	
+		$server = "localhost";
+		$username = "kutneya1";
+		$password = "dolphinbus";
+
+		$connection = new mysqli($server, $username, $password, $username);
+		if($connection->connect_error){
+			die("CONNECTION FAILED");
+		}
+
+		$SQLStatement = "SELECT * FROM campus_dogs WHERE dateTime >= now()-1";
+
+		$result = $connection->query($SQLStatement);
+		#$myJSON = json_encode($result);
+
+		
+		#if($connection->query($SQLStatement))
+		#{
+		#	echo "success";
+		#}
+		#else
+		#{
+		#	echo "fail";
+		#}
+		#echo $myJSON;
+		$rowData = array();
+		
+		if($result){
+			while($row = $result->fetch_assoc()){
+				$rowData[] = $row;
+			}
+			#$result->free();
+		}
+		echo json_encode($rowData);
+	
+	$connection->close();
+
+?>

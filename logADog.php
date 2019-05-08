@@ -75,7 +75,5 @@
 		$connection->close();
 		
 		}
-
+		
 ?>
-
-
