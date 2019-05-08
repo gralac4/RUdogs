@@ -4,8 +4,10 @@
 		<div class="foundTheFloofDataWrapper">
 			<h1>Floof Information:</h1>
 			<font size="5" id="dogLocation">Found outside:<br></font>
+			<font size="5" id="dogDateTime">Time dog was logged:<br></font>
 			<font size="5" id="dogOnDuty">It was not a service dog<br> </font>
-			<font size="5" id="dogRating">10/10 would pet again! </font>
+			<font size="5" id="permissionToPet">Permission to pet: yea!<br></font>
+			<font size="5" id="dogRating">10/10 an amazing doggo! </font>
 		</div>
 	</p>
 </div>
