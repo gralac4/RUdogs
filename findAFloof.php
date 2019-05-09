@@ -139,7 +139,7 @@ function changeText(id){
 		break;
 		case "science":
 		document.getElementById("dogLocation").innerHTML = "Found outside: Science<br>";
-		dogLocation('Science');
+		dogLocation('Science Building');
 		break;
 		case "studentCenter":
 		document.getElementById("dogLocation").innerHTML = "Found outside: Student Center<br>";
@@ -184,7 +184,7 @@ function changeText(id){
                                 console.log("found one!");
 				counterTotal ++;
 				console.log(counterTotal);
-				if(obj[i].serviceDog == 1){
+				if(obj[i].dogOnDuty == 1){
 					counterServiceDog ++;
 					console.log(counterServiceDog);
 				}
