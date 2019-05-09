@@ -3,7 +3,7 @@
 		<form action="#" id='dogForm' method='POST'>
 			
 			<h1>Log a Dog!</h1>
-			<font size="5">Where'd you see the doggo?</font>
+			<span class="infoText">Where'd you see the doggo?</span>
 			<br> 	
 			<select name="location" id="location">
 				<option value="Bozorth">Bozroth</option>
@@ -23,20 +23,20 @@
 				<option value="Wilson">Wilson</option>
 			</select><br>
 			<br>
-			<font size="5">Was the doggo on duty?</font>
+			<span class="infoText">Was the doggo on duty?</span>
 			<br>
-			<font size="2">**Please respect service dogs. Petting a service animal might be dangerous for the human they work with**</font>
+			<span class="disclaimer">**Please respect service dogs. Petting a service animal might be dangerous for the human they work with**</span>
 			<br>
 			<input type="radio" name="serviceDog" value=1>Yes
 			<input type="radio" name="serviceDog" value=0>No<br>
 			<br>
-			<font size="5">Was the owner okay with pets?</font>
+			<span class="infoText">Was the owner okay with pets?</span>
 			<br>
 			<input type="radio" name="permissionToPet" value=1>Yes
 			<input type="radio" name="permissionToPet" value=0>No
 			<input type="radio" name="permissionToPet" value=2>Unsure<br>
 			<br>
-			<font size="5">Was it a good dog?</font>
+			<span class="infoText">Was it a good dog?</span>
 			<br>
 			<input type="checkbox" name="rating" value =0 >10/10 an AMAZING DOGGO
 			<br>
@@ -45,7 +45,7 @@
 		
 		</form>	
 	</div>
-	<br><br><br><br><br><br><br><br>			
+	<br><br><br><br><br><br>			
 </div>
 <?php
 
