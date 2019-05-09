@@ -42,7 +42,7 @@
 			<br>
 			<br>
 			<input type="submit" id="submitButton" value="Submit" onclick="pr()" >
-			<input type="submit" id="submitButton" value="Submit" onclick="pr()">
+		
 		</form>	
 	</div>
 	<br><br><br><br><br><br><br><br>			
@@ -67,7 +67,7 @@
 			#$dateTime = date_create()->format('Y-m-d H:i:s');
 			$dateTime = date('Y-m-d H:i:s');
 			$rating = $_POST['rating'];
-			$insertSQL = "INSERT INTO campus_dogs (location, dateTime, dogOnDuty, permissionToPet, rating) VALUES('$location','$dateTime','$dogOnDuty','$permissionToPet','$$rating')";
+			$insertSQL = "INSERT INTO campus_dogs (location, dateTime, dogOnDuty, permissionToPet, rating) VALUES('$location','$dateTime','$dogOnDuty','$permissionToPet','$rating')";
 
 		if($connection->query($insertSQL)===TRUE){
 				echo "Thank you for logging a doggo at " . $location ;
