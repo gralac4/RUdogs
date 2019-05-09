@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
-        <head>
+	<head>
+		<title>Where RU dogs?</title>
 		<link rel="stylesheet" href="styles.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         </head>

@@ -39,17 +39,17 @@
 
 
 <div class="upperContentWrapper">
-	<p>
-		<img src="dogSquad.gif" align="right" hspace="10%" height=45% width=45% alt="Animated gif of dog squad running together">
+	<div class= container>
+		<img src="dogSquad.gif" class="dogSquad" alt="Animated gif of dog squad running together">
 		<div class="foundTheFloofDataWrapper">
 			<h1>Floof Information:</h1>
-			<font size="5" id="dogLocation">Found outside:<br></font>
-			<font size="5" id="dogTotal">Number of dogs in last 24 hours:<br></font>
-			<font size="5" id="dogOnDuty">Number of service dogs:<br> </font>
-			<font size="5" id="permissionToPet">How many you can pet:<br></font>
-			<font size="5" id="dogRating">How many are 10/10 amazing doggos!: </font>
+			<span id="dogLocation" class="infoText">Found outside:<br></span>
+			<span id="dogTotal" class="infoText">Number of dogs in last 24 hours:<br></span>
+			<span id="dogOnDuty" class="infoText">Number of service dogs:<br> </span>
+			<span id="permissionToPet" class="infoText">How many you can pet:<br></span>
+			<span id="dogRating" class="infoText">How many are 10/10 amazing doggos!: </span>
 		</div>
-	</p>
+	</div>
 </div>
 <div class="findFloofContentWrapper">
 	<div class="container">
@@ -68,7 +68,7 @@
 		<img src="pawprint.svg" id="wellnessCenter" class="wellnessCenter svg-18px" alt="Paw print on the Wellness Center">
 		<img src="pawprint.svg" id="westby" class="westby svg-18px" alt="Paw print on Westby">
 		<img src="pawprint.svg" id="wilson" class="wilson svg-18px" alt="Paw print on Wilson">
-		<img src="mapOfRowan.png" class="border" height=90% width=90% alt="Map of Rowan university">
+		<img src="mapOfRowan.png" class="border map" alt="Map of Rowan university">
 		<br>
 	</div>
 	<br>

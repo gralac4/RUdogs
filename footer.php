@@ -4,7 +4,7 @@
 	<br>
         <br>
 	<br>
-	<font size="1" class="center">They're good dogs, Brent</font>
+	<span class="center">They're good dogs, Brent</span>
 	<br>
 	<br>
 </div>
