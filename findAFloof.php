@@ -53,25 +53,27 @@
 </div>
 <div class="findFloofContentWrapper">
 	<div class="container">
-		<img src="pawprint.png" id="bunce" class="bunce pawprint" alt="Paw print on Bunce">
-		<img src="pawprint.png" id="bozorth" class="bozorth pawprint" alt="Paw print on Bozorth">
-		<img src="pawprint.png" id="business" class="business pawprint" alt="Paw print on Business">
-		<img src="pawprint.png" id="engineering" class="engineering pawprint" alt="Paw print on the Engineering Building">
-		<img src="pawprint.png" id="hawthorne" class="hawthorne pawprint" alt="Paw print on Hawthorne">
-		<img src="pawprint.png" id="james" class="james pawprint" alt="Paw print on James">
-		<img src="pawprint.png" id="library" class="library pawprint" alt="Paw print on the Library">
-		<img src="pawprint.png" id="recCenter" class="recCenter pawprint" alt="Paw print on the Rec Center">
-		<img src="pawprint.png" id="robinson" class="robinson pawprint" alt="Paw print on Robinson">
-		<img src="pawprint.png" id="savitz" class="savitz pawprint" alt="Paw print on Savitz">
-		<img src="pawprint.png" id="science" class="science pawprint" alt="Paw print on the Science Building">
-		<img src="pawprint.png" id="studentCenter" class="studentCenter pawprint" alt="Paw print on the Student Center">
-		<img src="pawprint.png" id="wellnessCenter" class="wellnessCenter pawprint" alt="Paw print on the Wellness Center">
-		<img src="pawprint.png" id="westby" class="westby pawprint" alt="Paw print on Westby">
-		<img src="pawprint.png" id="wilson" class="wilson pawprint" alt="Paw print on Wilson">
+		<img src="pawprint.svg" id="bunce" class="bunce svg-18px" alt="Paw print on Bunce">
+		<img src="pawprint.svg" id="bozorth" class="bozorth svg-18px" alt="Paw print on Bozorth">
+		<img src="pawprint.svg" id="business" class="business svg-18px" alt="Paw print on Business">
+		<img src="pawprint.svg" id="engineering" class="engineering svg-18px" alt="Paw print on the Engineering Building">
+		<img src="pawprint.svg" id="hawthorne" class="hawthorne svg-18px" alt="Paw print on Hawthorne">
+		<img src="pawprint.svg" id="james" class="james svg-18px" alt="Paw print on James">
+		<img src="pawprint.svg" id="library" class="library svg-18px" alt="Paw print on the Library">
+		<img src="pawprint.svg" id="recCenter" class="recCenter svg-18px" alt="Paw print on the Rec Center">
+		<img src="pawprint.svg" id="robinson" class="robinson svg-18px" alt="Paw print on Robinson">
+		<img src="pawprint.svg" id="savitz" class="savitz svg-18px" alt="Paw print on Savitz">
+		<img src="pawprint.svg" id="science" class="science svg-18px" alt="Paw print on the Science Building">
+		<img src="pawprint.svg" id="studentCenter" class="studentCenter svg-18px" alt="Paw print on the Student Center">
+		<img src="pawprint.svg" id="wellnessCenter" class="wellnessCenter svg-18px" alt="Paw print on the Wellness Center">
+		<img src="pawprint.svg" id="westby" class="westby svg-18px" alt="Paw print on Westby">
+		<img src="pawprint.svg" id="wilson" class="wilson svg-18px" alt="Paw print on Wilson">
 		<img src="mapOfRowan.png" class="border" height=90% width=90% alt="Map of Rowan university">
 		<br>
 	</div>
 	<br>
+	<br>
+        <br>
 </div>
 
 <script>

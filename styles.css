@@ -149,11 +149,16 @@ body {
 	height: 3%;
 	width: 2%;
 }
-.svg-24px {
-  	width: 24px;
-  	height: 24px;
+.svg-18px {
+  	width: 18px;
+  	height: 18px;
 }
 
+.footer{
+	background-color:#FF6675;
+        overflow: auto;
+	color:#9B3E49;	
+}
 /*style classes used for location of each building*/
 .robinson{
 	position: absolute;
