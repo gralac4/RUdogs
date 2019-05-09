@@ -53,21 +53,21 @@
 </div>
 <div class="findFloofContentWrapper">
 	<div class="container">
-		<img src="baseline-location_on-24px.svg" id="bunce" class="bunce" alt="Location pin on Bunce">
-		<img src="baseline-location_on-24px.svg" id="bozorth" class="bozorth" alt="location pin on Bozorth">
-		<img src="baseline-location_on-24px.svg" id="business" class="business" alt="location pin on Business">
-		<img src="baseline-location_on-24px.svg" id="engineering" class="engineering" alt="location pin on the Engineering Building">
-		<img src="baseline-location_on-24px.svg" id="hawthorne" class="hawthorne" alt="location pin on Hawthorne">
-		<img src="baseline-location_on-24px.svg" id="james" class="james" alt="location pin on James">
-		<img src="baseline-location_on-24px.svg" id="library" class="library" alt="location pin on the Library">
-		<img src="baseline-location_on-24px.svg" id="recCenter" class="recCenter" alt="location pin on the Rec Center">
-		<img src="baseline-location_on-24px.svg" id="robinson" class="robinson" alt="location pin on Robinson">
-		<img src="baseline-location_on-24px.svg" id="savitz" class="savitz" alt="location pin on Savitz">
-		<img src="baseline-location_on-24px.svg" id="science" class="science" alt="location pin on the Science Building">
-		<img src="baseline-location_on-24px.svg" id="studentCenter" class="studentCenter" alt="location pin on the Student Center">
-		<img src="baseline-location_on-24px.svg" id="wellnessCenter" class="wellnessCenter" alt="location pin on the Wellness Center">
-		<img src="baseline-location_on-24px.svg" id="westby" class="westby" alt="location pin on Westby">
-		<img src="baseline-location_on-24px.svg" id="wilson" class="wilson" alt="location pin on Wilson">
+		<img src="pawprint.png" id="bunce" class="bunce pawprint" alt="Paw print on Bunce">
+		<img src="pawprint.png" id="bozorth" class="bozorth pawprint" alt="Paw print on Bozorth">
+		<img src="pawprint.png" id="business" class="business pawprint" alt="Paw print on Business">
+		<img src="pawprint.png" id="engineering" class="engineering pawprint" alt="Paw print on the Engineering Building">
+		<img src="pawprint.png" id="hawthorne" class="hawthorne pawprint" alt="Paw print on Hawthorne">
+		<img src="pawprint.png" id="james" class="james pawprint" alt="Paw print on James">
+		<img src="pawprint.png" id="library" class="library pawprint" alt="Paw print on the Library">
+		<img src="pawprint.png" id="recCenter" class="recCenter pawprint" alt="Paw print on the Rec Center">
+		<img src="pawprint.png" id="robinson" class="robinson pawprint" alt="Paw print on Robinson">
+		<img src="pawprint.png" id="savitz" class="savitz pawprint" alt="Paw print on Savitz">
+		<img src="pawprint.png" id="science" class="science pawprint" alt="Paw print on the Science Building">
+		<img src="pawprint.png" id="studentCenter" class="studentCenter pawprint" alt="Paw print on the Student Center">
+		<img src="pawprint.png" id="wellnessCenter" class="wellnessCenter pawprint" alt="Paw print on the Wellness Center">
+		<img src="pawprint.png" id="westby" class="westby pawprint" alt="Paw print on Westby">
+		<img src="pawprint.png" id="wilson" class="wilson pawprint" alt="Paw print on Wilson">
 		<img src="mapOfRowan.png" class="border" height=90% width=90% alt="Map of Rowan university">
 		<br>
 	</div>
