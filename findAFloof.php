@@ -1,13 +1,53 @@
+<?php
+
+                $server = "localhost";
+                $username = "kutneya1";
+                $password = "dolphinbus";
+
+                $connection = new mysqli($server, $username, $password, $username);
+                if($connection->connect_error){
+                        die("CONNECTION FAILED");
+                }
+
+                $SQLStatement = "SELECT * FROM campus_dogs WHERE dateTime >= DATE_SUB(NOW(), INTERVAL 1 DAY)";
+
+                $result = $connection->query($SQLStatement);
+                #$myJSON = json_encode($result);
+                #echo $result;
+
+                #if($connection->query($SQLStatement))
+                #{
+                #       echo "success";
+                #}
+                #else
+                #{
+                #       echo "fail";
+                #}
+                #echo $myJSON;
+                $rowData = array();
+
+                if($result){
+                        while($row = $result->fetch_assoc()){
+                                $rowData[] = $row;
+                        }
+                        $result->free();
+                }
+
+        $connection->close();
+
+?>
+
+
 <div class="upperContentWrapper">
 	<p>
 		<img src="dogSquad.gif" align="right" hspace="10%" height=45% width=45% alt="Animated gif of dog squad running together">
 		<div class="foundTheFloofDataWrapper">
 			<h1>Floof Information:</h1>
 			<font size="5" id="dogLocation">Found outside:<br></font>
-			<font size="5" id="dogDateTime">Time dog was logged:<br></font>
-			<font size="5" id="dogOnDuty">It was not a service dog<br> </font>
-			<font size="5" id="permissionToPet">Permission to pet: yea!<br></font>
-			<font size="5" id="dogRating">10/10 an amazing doggo! </font>
+			<font size="5" id="dogTotal">Number of dogs in last 24 hours:<br></font>
+			<font size="5" id="dogOnDuty">Number of service dogs:<br> </font>
+			<font size="5" id="permissionToPet">How many you can pet:<br></font>
+			<font size="5" id="dogRating">How many are 10/10 amazing doggos!: </font>
 		</div>
 	</p>
 </div>
@@ -34,7 +74,7 @@
 	<br>
 </div>
 
-<script type="text/javascript">
+<script>
 		//Add all the event listeners for each location pin
 		document.getElementById("bunce").addEventListener("mouseover",function(){changeText("bunce")});
 		document.getElementById("bozorth").addEventListener("mouseover",function(){changeText("bozorth")});
@@ -57,51 +97,70 @@ function changeText(id){
 	switch(id){
 		case "bunce":
 		document.getElementById("dogLocation").innerHTML = "Found outside: Bunce<br>";
+		dogLocation('Bunce');
 		break;
 		case "bozorth":
 		document.getElementById("dogLocation").innerHTML = "Found outside: Bozorth<br>";
+		dogLocation('Borzorth');
 		break;
 		case "business":
 		document.getElementById("dogLocation").innerHTML = "Found outside: Business<br>";
+		dogLocation('Business');
 		break;
 		case "engineering":
 		document.getElementById("dogLocation").innerHTML = "Found outside: Engineering<br>";
+		dogLocation('Engineering');
 		break;
 		case "hawthorne":
 		document.getElementById("dogLocation").innerHTML = "Found outside: Hawthorne<br>";
+		dogLocation('Hawthorne');
 		break;
 		case "james":
 		document.getElementById("dogLocation").innerHTML = "Found outside: James<br>";
+		dogLocation('James');
 		break;
 		case "library":
 		document.getElementById("dogLocation").innerHTML = "Found outside: Library<br>";
+		dogLocation('Library');
 		break;
 		case "recCenter":
 		document.getElementById("dogLocation").innerHTML = "Found outside: Rec Center<br>";
+		dogLocation('Rec Center');
 		break;
 		case "robinson":
 		document.getElementById("dogLocation").innerHTML = "Found outside: Robinson<br>";
+		dogLocation('Robinson');
 		break;
 		case "savitz":
 		document.getElementById("dogLocation").innerHTML = "Found outside: Savitz<br>";
+		dogLocation('Savitz');
 		break;
 		case "science":
 		document.getElementById("dogLocation").innerHTML = "Found outside: Science<br>";
+		dogLocation('Science');
 		break;
 		case "studentCenter":
 		document.getElementById("dogLocation").innerHTML = "Found outside: Student Center<br>";
+		dogLocation('Student Center');
 		break;
 		case "wellnessCenter":
 		document.getElementById("dogLocation").innerHTML = "Found outside: Wellness Center<br>";
+		dogLocation('Wellness Center');
 		break;
 		case "westby":
 		document.getElementById("dogLocation").innerHTML = "Found outside: Westby<br>";
+		dogLocation('Westby');
 		break;
 		case "wilson":
 		document.getElementById("dogLocation").innerHTML = "Found outside: Wilson<br>";
+		dogLocation('Wilson');
 		break;
 		default:
 		document.getElementById("dogLocation").innerHTML = "Found outside: <br>";
+                document.getElementById("dogTotal").innerHTML = "Number of dogs in last 24 hours: <br>";
+              	document.getElementById("dogOnDuty").innerHTML = "Number of service dogs:<br>";
+                document.getElementById("permissionToPet").innerHTML = "How many you can pet:<br>";
+                document.getElementById("dogRating").innerHTML = "How many are 10/10 amazing doggos!:<br>";
 		break;
 	}
 
@@ -109,53 +168,41 @@ function changeText(id){
 
         function dogLocation(location){
                 var obj = <?php echo json_encode($rowData) ?>;
-                for(i in obj){
+		console.log(obj);
+                
+		
+		var counterTotal = 0;
+                var counterServiceDog = 0;
+                var counterPets = 0;
+                var counterRating = 0;
+		
+		for(i in obj){
                         if(obj[i].location == location)
                         {
                                 console.log("found one!");
-                                docuument.getElementById("dogLocation").innerHTML =
+				counterTotal ++;
+				console.log(counterTotal);
+				if(obj[i].serviceDog == 1){
+					counterServiceDog ++;
+					console.log(counterServiceDog);
+				}
+				if(obj[i].permissionToPet == 1){
+                                        counterPets ++;
+					console.log(counterPets);
+                                }
+				if(obj[i].rating == 0){
+					counterRating ++;
+					console.log(counterRating);
+				}
                         }
-                }
+		}
+			document.getElementById("dogLocation").innerHTML = "Found outside: "+location +"<br>";
+			document.getElementById("dogTotal").innerHTML = "Number of dogs in last 24 hours: " + counterTotal+ "<br>";
+			document.getElementById("dogOnDuty").innerHTML = "Number of service dogs: " + counterServiceDog + "<br>";
+			document.getElementById("permissionToPet").innerHTML = "How many you can pet: " +counterPets + " <br>";
+			document.getElementById("dogRating").innerHTML = "How many are 10/10 amazing doggos!: " +counterRating+ "<br>";
+
         }
 
 
 </script>
-<?php
-	
-		$server = "localhost";
-		$username = "kutneya1";
-		$password = "dolphinbus";
-
-		$connection = new mysqli($server, $username, $password, $username);
-		if($connection->connect_error){
-			die("CONNECTION FAILED");
-		}
-
-		$SQLStatement = "SELECT * FROM campus_dogs WHERE dateTime >= now()-1";
-
-		$result = $connection->query($SQLStatement);
-		#$myJSON = json_encode($result);
-
-		
-		#if($connection->query($SQLStatement))
-		#{
-		#	echo "success";
-		#}
-		#else
-		#{
-		#	echo "fail";
-		#}
-		#echo $myJSON;
-		$rowData = array();
-		
-		if($result){
-			while($row = $result->fetch_assoc()){
-				$rowData[] = $row;
-			}
-			#$result->free();
-		}
-		echo json_encode($rowData);
-	
-	$connection->close();
-
-?>
