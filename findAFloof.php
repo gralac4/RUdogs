@@ -103,7 +103,7 @@ function changeText(id){
 		break;
 		case "bozorth":
 		document.getElementById("dogLocation").innerHTML = "Found outside: Bozorth<br>";
-		dogLocation('Borzorth');
+		dogLocation('Bozorth');
 		break;
 		case "business":
 		document.getElementById("dogLocation").innerHTML = "Found outside: Business<br>";

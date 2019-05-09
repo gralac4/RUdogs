@@ -6,7 +6,7 @@
 			<span class="infoText">Where'd you see the doggo?</span>
 			<br> 	
 			<select name="location" id="location">
-				<option value="Bozorth">Bozroth</option>
+				<option value="Bozorth">Bozorth</option>
 				<option value="Bunce">Bunce</option>
 				<option value="Business">Business</option>
 				<option value="Engineering">Engineering</option>
